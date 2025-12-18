@@ -1,38 +1,16 @@
-# ¡Hola, soy [Tu Nombre]! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-
-### Desarrollador Full Stack | Amante del Código Abierto
-
-¡Bienvenido a mi perfil! Me apasiona crear software y aprender nuevas tecnologías.
-
----
-
-### 🛠️ Tecnologías y Herramientas
-
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-### 📊 Mis Estadísticas en GitHub
-
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=radical&hide_border=true" height="180" alt="stats graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=JOSETRA44&theme=radical&hide_border=true" alt="JOSETRA44 GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=radical&hide_border=true" height="180" alt="languages graph" />
+  <br><br>
+
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=JOSETRA44&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="JOSETRA44 Trophies" />
+  </a>
+
+  <br><br>
+
+  <img src="https://github-readme-stats.vercel.app/api?username=JOSETRA44&show_icons=true&theme=radical&hide_border=true&count_private=true" height="180" alt="JOSETRA44 Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JOSETRA44&layout=compact&theme=radical&hide_border=true" height="180" alt="JOSETRA44 Top Langs" />
 
 </div>
-
----
-
-### 📫 Contáctame
-
-<a href="https://linkedin.com/in/tu-perfil">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="mailto:tuemail@ejemplo.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-</a>

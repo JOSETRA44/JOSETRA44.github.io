@@ -1,0 +1,15 @@
+# Next.js
+.next/
+out/
+node_modules/
+
+# Build
+npm-debug.log*
+
+# env
+.env*
+!.env.example
+#informacion confidencial
+cv.txt
+instrucciones.txt
+

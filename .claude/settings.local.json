@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && gh run list --limit 5 2>&1)"
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && gh run list --limit 5 2>&1)",
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git pull origin main --allow-unrelated-histories 2>&1)",
+      "Bash(cd:*)"
     ]
   }
 }

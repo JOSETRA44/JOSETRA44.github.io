@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { WifiOff, Mic, ExternalLink, ArrowRight, Users, Zap } from "lucide-react";
+import { WifiOff, Mic, ExternalLink, ArrowRight, Users, Zap, Navigation, MapPin } from "lucide-react";
 
 const projects = [
   {
@@ -67,6 +67,37 @@ const projects = [
     status: { label: "Proyecto personal activo", pulse: true },
     gradient: "from-teal-500/5 via-transparent to-transparent",
   },
+  {
+    id: "ASCHU",
+    title: "ASCHU",
+    role: "Founder & Desarrollador",
+    period: "2025 — Presente",
+    icon: Navigation,
+    tag: "App Móvil Multiplataforma",
+    tagColor: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+    headline: "Rastreo vehicular en tiempo real para logística rural",
+    description:
+      "Aplicación multiplataforma para el seguimiento de vehículos y conductores en operaciones de logística rural en Perú. Conecta gestores de flota, conductores y pasajeros a través de una interfaz unificada con Google Maps y Supabase.",
+    features: [
+      {
+        icon: MapPin,
+        label: "Tracking en Tiempo Real",
+        desc: "Geolocalización centrada en Challhuahuacho, Cotabambas — zona rural real.",
+      },
+      {
+        icon: Zap,
+        label: "Supabase Realtime",
+        desc: "Suscripciones en tiempo real para sincronización de flota activa.",
+      },
+      {
+        icon: Users,
+        label: "Interfaz Unificada",
+        desc: "Gestores, conductores y pasajeros en una sola plataforma.",
+      },
+    ],
+    status: { label: "Beta en desarrollo", pulse: true },
+    gradient: "from-sky-500/5 via-transparent to-transparent",
+  },
 ];
 
 export default function Projects() {
@@ -90,7 +121,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((p, i) => (
             <motion.article
               key={p.id}

@@ -9,7 +9,7 @@ const stats = [
   { icon: GraduationCap, label: "UNSA", sub: "Economía · 2do Semestre" },
   { icon: Star, label: "Becario", sub: "Excelencia Académica" },
   { icon: MapPin, label: "Challhuahuacho", sub: "Cotabambas, Apurímac" },
-  { icon: Cpu, label: "2 Proyectos", sub: "Activos en desarrollo" },
+  { icon: Cpu, label: "3 Proyectos", sub: "Activos en desarrollo" },
 ];
 
 export default function About() {

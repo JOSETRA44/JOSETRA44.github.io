@@ -48,10 +48,12 @@ body {
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
+    background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7, #34d399, #10b981);
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: shimmer 8s ease infinite;
   }
 
   .glass {
@@ -62,5 +64,35 @@ body {
 
   .border-subtle {
     border: 1px solid rgba(28, 28, 28, 0.8);
+  }
+
+  /* Glow sutil para elementos con acento */
+  .accent-glow {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.12), 0 0 40px rgba(16, 185, 129, 0.04);
+  }
+
+  /* Elevación premium en hover para cards — no altera layout */
+  .card-lift {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.07), 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Keyframe: shimmer animado en text-gradient */
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+/* Accesibilidad: respeta preferencia de movimiento reducido del SO */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

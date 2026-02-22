@@ -3,7 +3,11 @@
     "allow": [
       "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && gh run list --limit 5 2>&1)",
       "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git pull origin main --allow-unrelated-histories 2>&1)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git push origin main 2>&1)",
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git add next.config.mjs && git commit -m \"$\\(cat <<'EOF'\nfix: restaurar basePath y assetPrefix para GitHub Pages en /JOSETRA44\n\nEl repo es JOSETRA44/JOSETRA44 → se sirve en josetra44.github.io/JOSETRA44/\nSin basePath los assets se buscan en / y no cargan.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git push origin main 2>&1)",
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git add next.config.mjs && git commit -m \"$\\(cat <<'EOF'\nfix: eliminar basePath/assetPrefix para dominio raiz josetra44.github.io\n\nRepo es josetra44.github.io → assets se sirven desde /\nNo se necesita basePath ni assetPrefix.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git push origin main 2>&1)",
+      "Bash(cd /c/Users/USER/source/PAGINAS-WEB/JOSETRA44 && git commit -m \"$\\(cat <<'EOF'\nfix: eliminar deploy.yml redundante, usar nextjs.yml del repo josetra44.github.io\n\n- Repo es JOSETRA44/josetra44.github.io -> user page -> sirve en raiz /\n- nextjs.yml usa configure-pages que maneja basePath automaticamente\n- next.config.mjs sin basePath/assetPrefix \\(correcto para user page\\)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git push origin main 2>&1)"
     ]
   }
 }

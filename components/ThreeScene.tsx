@@ -106,6 +106,24 @@ export default function ThreeScene() {
     return () => {
       cancelAnimationFrame(frameId);
       window.removeEventListener("resize", onResize);
+
+      // Dispose particle geometry and material
+      pGeo.dispose();
+      pMat.dispose();
+
+      // Dispose each constellation line's geometry and material
+      linesGroup.children.forEach((child) => {
+        const line = child as THREE.Line;
+        line.geometry.dispose();
+        (line.material as THREE.Material).dispose();
+      });
+
+      // Dispose torus geometries and materials
+      torus1.geometry.dispose();
+      (torus1.material as THREE.Material).dispose();
+      torus2.geometry.dispose();
+      (torus2.material as THREE.Material).dispose();
+
       renderer.dispose();
       if (mount.contains(renderer.domElement)) {
         mount.removeChild(renderer.domElement);
